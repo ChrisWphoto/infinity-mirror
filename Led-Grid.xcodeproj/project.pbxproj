@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		837716E41C3C81DA005AE287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837716E31C3C81DA005AE287 /* AppDelegate.swift */; };
+		837716E61C3C81DA005AE287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837716E51C3C81DA005AE287 /* ViewController.swift */; };
+		837716E91C3C81DA005AE287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837716E71C3C81DA005AE287 /* Main.storyboard */; };
+		837716EB1C3C81DA005AE287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837716EA1C3C81DA005AE287 /* Assets.xcassets */; };
+		837716EE1C3C81DA005AE287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837716EC1C3C81DA005AE287 /* LaunchScreen.storyboard */; };
+		837716F91C3C81DA005AE287 /* Led_GridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837716F81C3C81DA005AE287 /* Led_GridTests.swift */; };
+		837717041C3C81DA005AE287 /* Led_GridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837717031C3C81DA005AE287 /* Led_GridUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		837716F51C3C81DA005AE287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837716D81C3C81DA005AE287 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837716DF1C3C81DA005AE287;
+			remoteInfo = "Led-Grid";
+		};
+		837717001C3C81DA005AE287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837716D81C3C81DA005AE287 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837716DF1C3C81DA005AE287;
+			remoteInfo = "Led-Grid";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		837716E01C3C81DA005AE287 /* Led-Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Led-Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		837716E31C3C81DA005AE287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		837716E51C3C81DA005AE287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		837716E81C3C81DA005AE287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		837716EA1C3C81DA005AE287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		837716ED1C3C81DA005AE287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		837716EF1C3C81DA005AE287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837716F41C3C81DA005AE287 /* Led-GridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Led-GridTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		837716F81C3C81DA005AE287 /* Led_GridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Led_GridTests.swift; sourceTree = "<group>"; };
+		837716FA1C3C81DA005AE287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837716FF1C3C81DA005AE287 /* Led-GridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Led-GridUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		837717031C3C81DA005AE287 /* Led_GridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Led_GridUITests.swift; sourceTree = "<group>"; };
+		837717051C3C81DA005AE287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		837716DD1C3C81DA005AE287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837716F11C3C81DA005AE287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837716FC1C3C81DA005AE287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		837716D71C3C81DA005AE287 = {
+			isa = PBXGroup;
+			children = (
+				837716E21C3C81DA005AE287 /* Led-Grid */,
+				837716F71C3C81DA005AE287 /* Led-GridTests */,
+				837717021C3C81DA005AE287 /* Led-GridUITests */,
+				837716E11C3C81DA005AE287 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		837716E11C3C81DA005AE287 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				837716E01C3C81DA005AE287 /* Led-Grid.app */,
+				837716F41C3C81DA005AE287 /* Led-GridTests.xctest */,
+				837716FF1C3C81DA005AE287 /* Led-GridUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		837716E21C3C81DA005AE287 /* Led-Grid */ = {
+			isa = PBXGroup;
+			children = (
+				837716E31C3C81DA005AE287 /* AppDelegate.swift */,
+				837716E51C3C81DA005AE287 /* ViewController.swift */,
+				837716E71C3C81DA005AE287 /* Main.storyboard */,
+				837716EA1C3C81DA005AE287 /* Assets.xcassets */,
+				837716EC1C3C81DA005AE287 /* LaunchScreen.storyboard */,
+				837716EF1C3C81DA005AE287 /* Info.plist */,
+			);
+			path = "Led-Grid";
+			sourceTree = "<group>";
+		};
+		837716F71C3C81DA005AE287 /* Led-GridTests */ = {
+			isa = PBXGroup;
+			children = (
+				837716F81C3C81DA005AE287 /* Led_GridTests.swift */,
+				837716FA1C3C81DA005AE287 /* Info.plist */,
+			);
+			path = "Led-GridTests";
+			sourceTree = "<group>";
+		};
+		837717021C3C81DA005AE287 /* Led-GridUITests */ = {
+			isa = PBXGroup;
+			children = (
+				837717031C3C81DA005AE287 /* Led_GridUITests.swift */,
+				837717051C3C81DA005AE287 /* Info.plist */,
+			);
+			path = "Led-GridUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		837716DF1C3C81DA005AE287 /* Led-Grid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837717081C3C81DA005AE287 /* Build configuration list for PBXNativeTarget "Led-Grid" */;
+			buildPhases = (
+				837716DC1C3C81DA005AE287 /* Sources */,
+				837716DD1C3C81DA005AE287 /* Frameworks */,
+				837716DE1C3C81DA005AE287 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Led-Grid";
+			productName = "Led-Grid";
+			productReference = 837716E01C3C81DA005AE287 /* Led-Grid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		837716F31C3C81DA005AE287 /* Led-GridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8377170B1C3C81DA005AE287 /* Build configuration list for PBXNativeTarget "Led-GridTests" */;
+			buildPhases = (
+				837716F01C3C81DA005AE287 /* Sources */,
+				837716F11C3C81DA005AE287 /* Frameworks */,
+				837716F21C3C81DA005AE287 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				837716F61C3C81DA005AE287 /* PBXTargetDependency */,
+			);
+			name = "Led-GridTests";
+			productName = "Led-GridTests";
+			productReference = 837716F41C3C81DA005AE287 /* Led-GridTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		837716FE1C3C81DA005AE287 /* Led-GridUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8377170E1C3C81DA005AE287 /* Build configuration list for PBXNativeTarget "Led-GridUITests" */;
+			buildPhases = (
+				837716FB1C3C81DA005AE287 /* Sources */,
+				837716FC1C3C81DA005AE287 /* Frameworks */,
+				837716FD1C3C81DA005AE287 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				837717011C3C81DA005AE287 /* PBXTargetDependency */,
+			);
+			name = "Led-GridUITests";
+			productName = "Led-GridUITests";
+			productReference = 837716FF1C3C81DA005AE287 /* Led-GridUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		837716D81C3C81DA005AE287 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Christopher G Walter";
+				TargetAttributes = {
+					837716DF1C3C81DA005AE287 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2AZPGG834M;
+					};
+					837716F31C3C81DA005AE287 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2AZPGG834M;
+						TestTargetID = 837716DF1C3C81DA005AE287;
+					};
+					837716FE1C3C81DA005AE287 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2AZPGG834M;
+						TestTargetID = 837716DF1C3C81DA005AE287;
+					};
+				};
+			};
+			buildConfigurationList = 837716DB1C3C81DA005AE287 /* Build configuration list for PBXProject "Led-Grid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 837716D71C3C81DA005AE287;
+			productRefGroup = 837716E11C3C81DA005AE287 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				837716DF1C3C81DA005AE287 /* Led-Grid */,
+				837716F31C3C81DA005AE287 /* Led-GridTests */,
+				837716FE1C3C81DA005AE287 /* Led-GridUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		837716DE1C3C81DA005AE287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837716EE1C3C81DA005AE287 /* LaunchScreen.storyboard in Resources */,
+				837716EB1C3C81DA005AE287 /* Assets.xcassets in Resources */,
+				837716E91C3C81DA005AE287 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837716F21C3C81DA005AE287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837716FD1C3C81DA005AE287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		837716DC1C3C81DA005AE287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837716E61C3C81DA005AE287 /* ViewController.swift in Sources */,
+				837716E41C3C81DA005AE287 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837716F01C3C81DA005AE287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837716F91C3C81DA005AE287 /* Led_GridTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837716FB1C3C81DA005AE287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837717041C3C81DA005AE287 /* Led_GridUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		837716F61C3C81DA005AE287 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837716DF1C3C81DA005AE287 /* Led-Grid */;
+			targetProxy = 837716F51C3C81DA005AE287 /* PBXContainerItemProxy */;
+		};
+		837717011C3C81DA005AE287 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837716DF1C3C81DA005AE287 /* Led-Grid */;
+			targetProxy = 837717001C3C81DA005AE287 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		837716E71C3C81DA005AE287 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				837716E81C3C81DA005AE287 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		837716EC1C3C81DA005AE287 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				837716ED1C3C81DA005AE287 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		837717061C3C81DA005AE287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		837717071C3C81DA005AE287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		837717091C3C81DA005AE287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Led-Grid/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMKC.Led-Grid";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8377170A1C3C81DA005AE287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Led-Grid/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMKC.Led-Grid";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8377170C1C3C81DA005AE287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Led-GridTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMKC.Led-GridTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Led-Grid.app/Led-Grid";
+			};
+			name = Debug;
+		};
+		8377170D1C3C81DA005AE287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Led-GridTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMKC.Led-GridTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Led-Grid.app/Led-Grid";
+			};
+			name = Release;
+		};
+		8377170F1C3C81DA005AE287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Led-GridUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMKC.Led-GridUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Led-Grid";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		837717101C3C81DA005AE287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Led-GridUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMKC.Led-GridUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Led-Grid";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		837716DB1C3C81DA005AE287 /* Build configuration list for PBXProject "Led-Grid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837717061C3C81DA005AE287 /* Debug */,
+				837717071C3C81DA005AE287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		837717081C3C81DA005AE287 /* Build configuration list for PBXNativeTarget "Led-Grid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837717091C3C81DA005AE287 /* Debug */,
+				8377170A1C3C81DA005AE287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8377170B1C3C81DA005AE287 /* Build configuration list for PBXNativeTarget "Led-GridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8377170C1C3C81DA005AE287 /* Debug */,
+				8377170D1C3C81DA005AE287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8377170E1C3C81DA005AE287 /* Build configuration list for PBXNativeTarget "Led-GridUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8377170F1C3C81DA005AE287 /* Debug */,
+				837717101C3C81DA005AE287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 837716D81C3C81DA005AE287 /* Project object */;
+}

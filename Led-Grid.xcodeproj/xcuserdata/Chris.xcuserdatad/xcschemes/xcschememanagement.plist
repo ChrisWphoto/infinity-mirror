@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Led-Grid.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>837716DF1C3C81DA005AE287</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>837716F31C3C81DA005AE287</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>837716FE1C3C81DA005AE287</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
