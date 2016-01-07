@@ -14,6 +14,14 @@
 		837716EE1C3C81DA005AE287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837716EC1C3C81DA005AE287 /* LaunchScreen.storyboard */; };
 		837716F91C3C81DA005AE287 /* Led_GridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837716F81C3C81DA005AE287 /* Led_GridTests.swift */; };
 		837717041C3C81DA005AE287 /* Led_GridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837717031C3C81DA005AE287 /* Led_GridUITests.swift */; };
+		837717141C3C831E005AE287 /* ledBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837717131C3C831E005AE287 /* ledBtn.swift */; };
+		837717171C3CC966005AE287 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 837717161C3CC966005AE287 /* button.png */; };
+		837717581C3DC3E1005AE287 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 837717571C3DC3E1005AE287 /* circle.png */; };
+		8377175D1C3DC59F005AE287 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377175B1C3DC59F005AE287 /* BTDiscovery.swift */; };
+		8377175E1C3DC59F005AE287 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377175C1C3DC59F005AE287 /* BTService.swift */; };
+		837717621C3E0CC6005AE287 /* button-led.png in Resources */ = {isa = PBXBuildFile; fileRef = 837717611C3E0CC6005AE287 /* button-led.png */; };
+		837717661C3E0E5F005AE287 /* btn-circle-led.png in Resources */ = {isa = PBXBuildFile; fileRef = 837717651C3E0E5F005AE287 /* btn-circle-led.png */; };
+		8377176A1C3E1983005AE287 /* img-led-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 837717691C3E1983005AE287 /* img-led-on.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		837716FF1C3C81DA005AE287 /* Led-GridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Led-GridUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837717031C3C81DA005AE287 /* Led_GridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Led_GridUITests.swift; sourceTree = "<group>"; };
 		837717051C3C81DA005AE287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837717131C3C831E005AE287 /* ledBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ledBtn.swift; sourceTree = "<group>"; };
+		837717161C3CC966005AE287 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		837717571C3DC3E1005AE287 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		8377175B1C3DC59F005AE287 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
+		8377175C1C3DC59F005AE287 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
+		837717611C3E0CC6005AE287 /* button-led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-led.png"; sourceTree = "<group>"; };
+		837717651C3E0E5F005AE287 /* btn-circle-led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-circle-led.png"; sourceTree = "<group>"; };
+		837717691C3E1983005AE287 /* img-led-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-led-on.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,7 @@
 		837716D71C3C81DA005AE287 = {
 			isa = PBXGroup;
 			children = (
+				837717131C3C831E005AE287 /* ledBtn.swift */,
 				837716E21C3C81DA005AE287 /* Led-Grid */,
 				837716F71C3C81DA005AE287 /* Led-GridTests */,
 				837717021C3C81DA005AE287 /* Led-GridUITests */,
@@ -97,6 +114,12 @@
 		837716E21C3C81DA005AE287 /* Led-Grid */ = {
 			isa = PBXGroup;
 			children = (
+				8377175A1C3DC563005AE287 /* Classes */,
+				837717571C3DC3E1005AE287 /* circle.png */,
+				837717651C3E0E5F005AE287 /* btn-circle-led.png */,
+				837717161C3CC966005AE287 /* button.png */,
+				837717611C3E0CC6005AE287 /* button-led.png */,
+				837717691C3E1983005AE287 /* img-led-on.png */,
 				837716E31C3C81DA005AE287 /* AppDelegate.swift */,
 				837716E51C3C81DA005AE287 /* ViewController.swift */,
 				837716E71C3C81DA005AE287 /* Main.storyboard */,
@@ -123,6 +146,15 @@
 				837717051C3C81DA005AE287 /* Info.plist */,
 			);
 			path = "Led-GridUITests";
+			sourceTree = "<group>";
+		};
+		8377175A1C3DC563005AE287 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8377175B1C3DC59F005AE287 /* BTDiscovery.swift */,
+				8377175C1C3DC59F005AE287 /* BTService.swift */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +264,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837717661C3E0E5F005AE287 /* btn-circle-led.png in Resources */,
 				837716EE1C3C81DA005AE287 /* LaunchScreen.storyboard in Resources */,
+				8377176A1C3E1983005AE287 /* img-led-on.png in Resources */,
+				837717621C3E0CC6005AE287 /* button-led.png in Resources */,
+				837717171C3CC966005AE287 /* button.png in Resources */,
+				837717581C3DC3E1005AE287 /* circle.png in Resources */,
 				837716EB1C3C81DA005AE287 /* Assets.xcassets in Resources */,
 				837716E91C3C81DA005AE287 /* Main.storyboard in Resources */,
 			);
@@ -259,7 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837717141C3C831E005AE287 /* ledBtn.swift in Sources */,
 				837716E61C3C81DA005AE287 /* ViewController.swift in Sources */,
+				8377175E1C3DC59F005AE287 /* BTService.swift in Sources */,
+				8377175D1C3DC59F005AE287 /* BTDiscovery.swift in Sources */,
 				837716E41C3C81DA005AE287 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +525,7 @@
 				8377170A1C3C81DA005AE287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8377170B1C3C81DA005AE287 /* Build configuration list for PBXNativeTarget "Led-GridTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +534,7 @@
 				8377170D1C3C81DA005AE287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8377170E1C3C81DA005AE287 /* Build configuration list for PBXNativeTarget "Led-GridUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +543,7 @@
 				837717101C3C81DA005AE287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

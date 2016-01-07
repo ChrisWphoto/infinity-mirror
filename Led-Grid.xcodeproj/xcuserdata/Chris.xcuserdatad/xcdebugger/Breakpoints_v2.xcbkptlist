@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Led-Grid/ViewController.swift"
+            timestampString = "473830045.09704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Led_Grid.ViewController.imgLeds.getter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;__ObjC.UIImageView&gt;&gt;"
+                  moduleName = "Led-Grid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Chris/programming/IOS/Led-Grid/Led-Grid/ViewController.swift"
+                  timestampString = "473830099.177599"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Led_Grid.ViewController.imgLeds.setter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;__ObjC.UIImageView&gt;&gt;"
+                  moduleName = "Led-Grid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Chris/programming/IOS/Led-Grid/Led-Grid/ViewController.swift"
+                  timestampString = "473830099.177936"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Led_Grid.ViewController.imgLeds.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;__ObjC.UIImageView&gt;&gt;"
+                  moduleName = "Led-Grid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Chris/programming/IOS/Led-Grid/Led-Grid/ViewController.swift"
+                  timestampString = "473830099.178163"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Led_Grid.ViewController.init (Led_Grid.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Led_Grid.ViewController"
+                  moduleName = "Led-Grid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Chris/programming/IOS/Led-Grid/Led-Grid/ViewController.swift"
+                  timestampString = "473830099.178386"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Led_Grid.ViewController.init (Led_Grid.ViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Led_Grid.ViewController&gt;"
+                  moduleName = "Led-Grid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Chris/programming/IOS/Led-Grid/Led-Grid/ViewController.swift"
+                  timestampString = "473830099.17861"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
