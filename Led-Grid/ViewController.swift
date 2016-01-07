@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     var timerTXDelay: NSTimer?
     var allowTX = true
     var lastPosition: UInt8 = 255
+    var sendPosNum: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,21 +72,37 @@ class ViewController: UIViewController {
             return
         }
         
-        // 2
-        // Validate value
-//        if position == lastPosition {
-//            return
-//        }
-            // 3
-//        else if ((position < 0) || (position > 180)) {
-//            return
-//        }
+ 
+
+        var r: UInt32 = 50
+        var g : UInt32 = 128
+        var b : UInt32 = 255
+        
+        var final : UInt32 = UInt32(position)
+        final = (final << 24)
+        r = (r << 16)
+        g = (g << 8)
+        
+        final = final | r | g | b
+        
+        var strFinal = "" as String
+        strFinal += NSString(format: "%8X", final) as String
+        print(strFinal)
+        
+        
+        
         
         // 4
         // Send position to BLE Shield (if service exists and is connected)
         if let bleService = btDiscoverySharedInstance.bleService {
-            bleService.writePosition(position)
-            lastPosition = position
+            bleService.writePosition(final)
+//            bleService.writePosition(UInt8(50))
+//            bleService.writePosition(UInt8(50))
+//            bleService.writePosition(UInt8(150))
+            //            bleService.writePosition(position)
+//            lastPosition = position
+            print(sendPosNum)
+            sendPosNum++
             
             // 5
             // Start delay timer
@@ -146,7 +163,7 @@ class ViewController: UIViewController {
         
         for img in imgLeds{
             if (img.frame.contains(location)){
-                print("Hit!: ", location, img.tag)
+//                print("Hit!: ", location, img.tag)
                 img.image = UIImage(named: "img-led-on.png")
                 self.sendPosition(UInt8(img.tag))
                 
@@ -169,7 +186,7 @@ class ViewController: UIViewController {
         
         for img in imgLeds{
             if (img.frame.contains(location)){
-                print("Hit!: ", location, img.tag)
+//                print("Hit!: ", location, img.tag)
                 img.image = UIImage(named: "img-led-on.png")
                 self.sendPosition(UInt8(img.tag))
                 break
