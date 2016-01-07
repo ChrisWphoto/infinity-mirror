@@ -17,179 +17,197 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OD2-sf-h3t">
-                                <rect key="frame" x="-29" y="-19" width="744" height="1392"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m7h-EP-buF">
-                                        <rect key="frame" x="0.0" y="0.0" width="744" height="1392"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iGi-gv-u7d">
-                                                <rect key="frame" x="0.0" y="0.0" width="744" height="1392"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N0k-Sn-ooQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="744" height="1392"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="5iz-1b-hjK">
-                                                                <rect key="frame" x="0.0" y="0.0" width="744" height="1392"/>
-                                                            </imageView>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bluetooth_Disconnected" translatesAutoresizingMaskIntoConstraints="NO" id="ugf-pE-aD4">
-                                <rect key="frame" x="121" y="555" width="130" height="62"/>
+                                <rect key="frame" x="162" y="20" width="50" height="50"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-tt-3TN">
-                                <rect key="frame" x="0.0" y="174" width="53" height="53"/>
+                                <rect key="frame" x="2" y="296" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="FmJ-Nq-7W6">
-                                <rect key="frame" x="54" y="174" width="53" height="53"/>
+                                <rect key="frame" x="55" y="296" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="SJO-AY-roB">
-                                <rect key="frame" x="108" y="174" width="53" height="53"/>
+                                <rect key="frame" x="108" y="296" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="9P7-Sh-mK8">
-                                <rect key="frame" x="161" y="174" width="53" height="53"/>
+                                <rect key="frame" x="161" y="296" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="VS4-7N-uMZ">
-                                <rect key="frame" x="214" y="174" width="53" height="53"/>
+                                <rect key="frame" x="214" y="296" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="zA6-U4-6hR">
-                                <rect key="frame" x="268" y="174" width="53" height="53"/>
+                                <rect key="frame" x="267" y="296" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="3k0-aU-BWL">
-                                <rect key="frame" x="321" y="174" width="53" height="53"/>
+                                <rect key="frame" x="320" y="296" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="qgR-UV-68q">
-                                <rect key="frame" x="0.0" y="228" width="53" height="53"/>
+                                <rect key="frame" x="2" y="349" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="x65-0k-hEh">
-                                <rect key="frame" x="54" y="228" width="53" height="53"/>
+                                <rect key="frame" x="55" y="349" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="pIy-tC-oph">
-                                <rect key="frame" x="108" y="228" width="53" height="53"/>
+                                <rect key="frame" x="108" y="349" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="2VW-fz-lSF">
-                                <rect key="frame" x="161" y="228" width="53" height="53"/>
+                                <rect key="frame" x="161" y="349" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="5av-BX-Dta">
-                                <rect key="frame" x="214" y="228" width="53" height="53"/>
+                                <rect key="frame" x="214" y="349" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="SCL-bA-8Pe">
-                                <rect key="frame" x="268" y="228" width="53" height="53"/>
+                                <rect key="frame" x="267" y="349" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mmy-Mq-Jck">
-                                <rect key="frame" x="321" y="228" width="53" height="53"/>
+                                <rect key="frame" x="320" y="349" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="DCP-5u-IPJ">
-                                <rect key="frame" x="0.0" y="281" width="53" height="53"/>
+                                <rect key="frame" x="2" y="402" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="znj-KW-PuI">
-                                <rect key="frame" x="54" y="281" width="53" height="53"/>
+                                <rect key="frame" x="55" y="402" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="aEl-xd-AnR">
-                                <rect key="frame" x="108" y="281" width="53" height="53"/>
+                                <rect key="frame" x="108" y="402" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="dIG-j7-Y3T">
-                                <rect key="frame" x="161" y="281" width="53" height="53"/>
+                                <rect key="frame" x="161" y="402" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gkr-Dn-g9a">
-                                <rect key="frame" x="214" y="281" width="53" height="53"/>
+                                <rect key="frame" x="214" y="402" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tve-1g-PYh">
-                                <rect key="frame" x="268" y="281" width="53" height="53"/>
+                                <rect key="frame" x="267" y="402" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="dGl-Ny-6Ul">
-                                <rect key="frame" x="321" y="281" width="53" height="53"/>
+                                <rect key="frame" x="320" y="402" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="FRE-X0-L9b">
-                                <rect key="frame" x="0.0" y="335" width="53" height="53"/>
+                                <rect key="frame" x="2" y="455" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="n7j-3t-Gzp">
-                                <rect key="frame" x="54" y="335" width="53" height="53"/>
+                                <rect key="frame" x="55" y="455" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="E05-H1-zj8">
-                                <rect key="frame" x="108" y="335" width="53" height="53"/>
+                                <rect key="frame" x="108" y="455" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="U3e-pT-au1">
-                                <rect key="frame" x="161" y="335" width="53" height="53"/>
+                                <rect key="frame" x="161" y="455" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="tJc-UH-dE1">
-                                <rect key="frame" x="214" y="335" width="53" height="53"/>
+                                <rect key="frame" x="214" y="455" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="qoz-JL-LrG">
-                                <rect key="frame" x="268" y="335" width="53" height="53"/>
+                                <rect key="frame" x="267" y="455" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="SOp-OQ-VEc">
-                                <rect key="frame" x="321" y="335" width="53" height="53"/>
+                                <rect key="frame" x="320" y="455" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="lmz-fC-6fr">
-                                <rect key="frame" x="0.0" y="388" width="53" height="53"/>
+                                <rect key="frame" x="2" y="508" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="6NF-92-Bal">
-                                <rect key="frame" x="54" y="388" width="53" height="53"/>
+                                <rect key="frame" x="55" y="508" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="kaz-xy-P6n">
-                                <rect key="frame" x="108" y="388" width="53" height="53"/>
+                                <rect key="frame" x="108" y="508" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="qhg-0O-5oc">
-                                <rect key="frame" x="161" y="388" width="53" height="53"/>
+                                <rect key="frame" x="161" y="508" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLi-mY-DM7">
-                                <rect key="frame" x="214" y="388" width="53" height="53"/>
+                                <rect key="frame" x="214" y="508" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="5UM-Bx-h2g">
-                                <rect key="frame" x="268" y="388" width="53" height="53"/>
+                                <rect key="frame" x="267" y="508" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="hfa-y7-j3J">
-                                <rect key="frame" x="321" y="388" width="53" height="53"/>
+                                <rect key="frame" x="320" y="508" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Le-WQ-bIJ">
-                                <rect key="frame" x="0.0" y="441" width="53" height="53"/>
+                                <rect key="frame" x="2" y="561" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="RKL-KO-KeT">
-                                <rect key="frame" x="54" y="441" width="53" height="53"/>
+                                <rect key="frame" x="55" y="561" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="tZp-El-K4Q">
-                                <rect key="frame" x="108" y="441" width="53" height="53"/>
+                                <rect key="frame" x="108" y="561" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="eAR-rz-NAi">
-                                <rect key="frame" x="161" y="441" width="53" height="53"/>
+                                <rect key="frame" x="161" y="561" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="nb8-cG-NVe">
-                                <rect key="frame" x="214" y="441" width="53" height="53"/>
+                                <rect key="frame" x="214" y="561" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="uX6-m2-nbv">
-                                <rect key="frame" x="268" y="441" width="53" height="53"/>
+                                <rect key="frame" x="267" y="561" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="9gL-m0-Scl">
-                                <rect key="frame" x="321" y="441" width="53" height="53"/>
+                                <rect key="frame" x="320" y="561" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="5we-1E-wh9">
-                                <rect key="frame" x="0.0" y="495" width="53" height="53"/>
+                                <rect key="frame" x="2" y="614" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="09w-JI-vGd">
-                                <rect key="frame" x="54" y="495" width="53" height="53"/>
+                                <rect key="frame" x="55" y="614" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="th9-8a-bme">
-                                <rect key="frame" x="108" y="495" width="53" height="53"/>
+                                <rect key="frame" x="108" y="614" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ebw-RR-eMP">
-                                <rect key="frame" x="161" y="495" width="53" height="53"/>
+                                <rect key="frame" x="161" y="614" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-15-NVc">
-                                <rect key="frame" x="214" y="495" width="53" height="53"/>
+                                <rect key="frame" x="214" y="614" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="T8o-cx-hAV">
-                                <rect key="frame" x="268" y="495" width="53" height="53"/>
+                                <rect key="frame" x="267" y="614" width="53" height="53"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="vfX-VA-Xwq">
-                                <rect key="frame" x="321" y="495" width="53" height="53"/>
+                                <rect key="frame" x="320" y="614" width="53" height="53"/>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-qJ-8Vf">
+                                <rect key="frame" x="0.0" y="258" width="375" height="31"/>
+                                <connections>
+                                    <action selector="blueSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="ynz-VC-bRa"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="75" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="YrD-CN-LaQ">
+                                <rect key="frame" x="0.0" y="223" width="375" height="31"/>
+                                <color key="tintColor" red="0.066386950987103566" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="greenSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="gpG-RW-XRt"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="dUw-YP-Oti">
+                                <rect key="frame" x="0.0" y="188" width="375" height="31"/>
+                                <color key="tintColor" red="1" green="0.030793504433243246" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="redSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="VyN-as-ueD"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Hq-FA-pXj">
+                                <rect key="frame" x="320" y="149" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuy-mP-Z1h">
+                                <rect key="frame" x="245" y="154" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bVW-19-0Fr">
+                                <rect key="frame" x="9" y="149" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleRainbow:" destination="BYZ-38-t0r" eventType="valueChanged" id="fGG-Ks-ZUn"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rainbow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uJ-KW-ED6">
+                                <rect key="frame" x="66" y="154" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -255,8 +273,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Bluetooth_Disconnected" width="190" height="71"/>
-        <image name="bg" width="744" height="1392"/>
+        <image name="Bluetooth_Disconnected" width="230" height="230"/>
         <image name="btn-circle-led.png" width="174" height="174"/>
     </resources>
 </document>

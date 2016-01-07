@@ -22,6 +22,10 @@
 		837717621C3E0CC6005AE287 /* button-led.png in Resources */ = {isa = PBXBuildFile; fileRef = 837717611C3E0CC6005AE287 /* button-led.png */; };
 		837717661C3E0E5F005AE287 /* btn-circle-led.png in Resources */ = {isa = PBXBuildFile; fileRef = 837717651C3E0E5F005AE287 /* btn-circle-led.png */; };
 		8377176A1C3E1983005AE287 /* img-led-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 837717691C3E1983005AE287 /* img-led-on.png */; };
+		8377176C1C3EC4ED005AE287 /* image-led-grid-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 8377176B1C3EC4ED005AE287 /* image-led-grid-green.png */; };
+		8377176E1C3EC4F6005AE287 /* image-led-grid-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 8377176D1C3EC4F6005AE287 /* image-led-grid-blue.png */; };
+		837717701C3EF021005AE287 /* bt-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8377176F1C3EF021005AE287 /* bt-on.png */; };
+		837717721C3EF030005AE287 /* bt-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 837717711C3EF030005AE287 /* bt-off.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		837717611C3E0CC6005AE287 /* button-led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-led.png"; sourceTree = "<group>"; };
 		837717651C3E0E5F005AE287 /* btn-circle-led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-circle-led.png"; sourceTree = "<group>"; };
 		837717691C3E1983005AE287 /* img-led-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-led-on.png"; sourceTree = "<group>"; };
+		8377176B1C3EC4ED005AE287 /* image-led-grid-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-led-grid-green.png"; sourceTree = "<group>"; };
+		8377176D1C3EC4F6005AE287 /* image-led-grid-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-led-grid-blue.png"; sourceTree = "<group>"; };
+		8377176F1C3EF021005AE287 /* bt-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-on.png"; sourceTree = "<group>"; };
+		837717711C3EF030005AE287 /* bt-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt-off.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +124,11 @@
 			children = (
 				8377175A1C3DC563005AE287 /* Classes */,
 				837717571C3DC3E1005AE287 /* circle.png */,
+				8377176B1C3EC4ED005AE287 /* image-led-grid-green.png */,
+				8377176D1C3EC4F6005AE287 /* image-led-grid-blue.png */,
 				837717651C3E0E5F005AE287 /* btn-circle-led.png */,
+				8377176F1C3EF021005AE287 /* bt-on.png */,
+				837717711C3EF030005AE287 /* bt-off.png */,
 				837717161C3CC966005AE287 /* button.png */,
 				837717611C3E0CC6005AE287 /* button-led.png */,
 				837717691C3E1983005AE287 /* img-led-on.png */,
@@ -264,10 +276,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8377176C1C3EC4ED005AE287 /* image-led-grid-green.png in Resources */,
 				837717661C3E0E5F005AE287 /* btn-circle-led.png in Resources */,
 				837716EE1C3C81DA005AE287 /* LaunchScreen.storyboard in Resources */,
+				837717721C3EF030005AE287 /* bt-off.png in Resources */,
 				8377176A1C3E1983005AE287 /* img-led-on.png in Resources */,
 				837717621C3E0CC6005AE287 /* button-led.png in Resources */,
+				8377176E1C3EC4F6005AE287 /* image-led-grid-blue.png in Resources */,
+				837717701C3EF021005AE287 /* bt-on.png in Resources */,
 				837717171C3CC966005AE287 /* button.png in Resources */,
 				837717581C3DC3E1005AE287 /* circle.png in Resources */,
 				837716EB1C3C81DA005AE287 /* Assets.xcassets in Resources */,

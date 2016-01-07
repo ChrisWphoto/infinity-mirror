@@ -93,7 +93,7 @@ class BTService: NSObject, CBPeripheralDelegate {
   
   // Mark: - Private
   
-  func writePosition(position: UInt32) {
+  func writePosition(position: UInt8) {
     
     /******** (1) CODE TO BE ADDED *******/
     
@@ -101,9 +101,9 @@ class BTService: NSObject, CBPeripheralDelegate {
     if let positionCharacteristic = self.positionCharacteristic {
         // Need a mutable var to pass to writeValue function
         var positionValue = position
-        let data = NSData(bytes: &positionValue, length: sizeof(UInt32))
+        let data = NSData(bytes: &positionValue, length: sizeof(UInt8))
         print("this is Sparta ",data)
-        self.peripheral?.writeValue(data, forCharacteristic: positionCharacteristic, type: CBCharacteristicWriteType.WithResponse)
+        self.peripheral?.writeValue(data, forCharacteristic: positionCharacteristic, type: CBCharacteristicWriteType.WithoutResponse)
     }
     
   }

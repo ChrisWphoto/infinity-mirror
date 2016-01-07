@@ -18,9 +18,33 @@ class ViewController: UIViewController {
 
     @IBOutlet var imgLeds: [UIImageView]!
     @IBOutlet weak var imgBluetoothStatus: UIImageView!
-
-
     
+    var lightPanelMode: UInt8 = 100 //default to live User mode
+    
+    var redSliderVal: UInt8 = 125
+    var greenSliderVal: UInt8 = 75
+    var blueSliderVal: UInt8 = 25
+    
+    @IBAction func redSlider(sender: UISlider) {
+        redSliderVal = UInt8(sender.value)
+        print("red",sender.value)
+    }
+    @IBAction func greenSlider(sender: UISlider) {
+        greenSliderVal = UInt8(sender.value)
+        print("green",sender.value)
+    }
+
+    @IBAction func blueSlider(sender: UISlider) {
+        blueSliderVal = UInt8(sender.value)
+        print("blue",sender.value)
+    }
+    
+    @IBAction func toggleRainbow(sender: UISwitch) {
+        if (sender.on) { lightPanelMode = UInt8(101) }
+        else { lightPanelMode = UInt8(100) }
+        sendPosition(UInt8(0))
+        print("toggle Rainbow: ", sender.on, "lightPanelMode:", lightPanelMode)
+    }
     var timerTXDelay: NSTimer?
     var allowTX = true
     var lastPosition: UInt8 = 255
@@ -29,15 +53,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-       
+        //setup view 
         var i = 0
         for img in imgLeds{
             img.tag = i
+            img.image = UIImage(named: "image-led-grid-blue.png")
             i++
-        }
-        
-        for img in imgLeds{
-            print(img)
         }
         
         // Watch Bluetooth connection
@@ -71,36 +92,32 @@ class ViewController: UIViewController {
         if !allowTX {
             return
         }
-        
- 
+  
+//        var r: UInt32 = 50
+//        var g : UInt32 = 128
+//        var b : UInt32 = 255
+//        
+//        var final : UInt32 = UInt32(position)
+//        final = (final << 24)
+//        r = (r << 16)
+//        g = (g << 8)
+//        
+//        final = final | r | g | b
+//        
+//        var strFinal = "" as String
+//        strFinal += NSString(format: "%8X", final) as String
+//        print(strFinal)
 
-        var r: UInt32 = 50
-        var g : UInt32 = 128
-        var b : UInt32 = 255
-        
-        var final : UInt32 = UInt32(position)
-        final = (final << 24)
-        r = (r << 16)
-        g = (g << 8)
-        
-        final = final | r | g | b
-        
-        var strFinal = "" as String
-        strFinal += NSString(format: "%8X", final) as String
-        print(strFinal)
-        
-        
-        
-        
         // 4
         // Send position to BLE Shield (if service exists and is connected)
         if let bleService = btDiscoverySharedInstance.bleService {
-            bleService.writePosition(final)
-//            bleService.writePosition(UInt8(50))
-//            bleService.writePosition(UInt8(50))
-//            bleService.writePosition(UInt8(150))
-            //            bleService.writePosition(position)
-//            lastPosition = position
+//          bleService.writePosition(final)
+            bleService.writePosition(blueSliderVal)
+            bleService.writePosition(greenSliderVal)
+            bleService.writePosition(redSliderVal)
+            bleService.writePosition(position)
+            bleService.writePosition(lightPanelMode)
+        
             print(sendPosNum)
             sendPosNum++
             
@@ -163,10 +180,15 @@ class ViewController: UIViewController {
         
         for img in imgLeds{
             if (img.frame.contains(location)){
-//                print("Hit!: ", location, img.tag)
-                img.image = UIImage(named: "img-led-on.png")
+                img.image = UIImage(named: "image-led-grid-green.png")
                 self.sendPosition(UInt8(img.tag))
                 
+                //setup timer for removing img
+                _ = NSTimer.scheduledTimerWithTimeInterval(1,
+                    target: self,
+                    selector: ("resetImage:"),
+                    userInfo: img,
+                    repeats: false)
 
                 break
             }
@@ -186,15 +208,35 @@ class ViewController: UIViewController {
         
         for img in imgLeds{
             if (img.frame.contains(location)){
-//                print("Hit!: ", location, img.tag)
-                img.image = UIImage(named: "img-led-on.png")
+                img.image = UIImage(named: "image-led-grid-green.png")
                 self.sendPosition(UInt8(img.tag))
+                
+                //setup timer for removing img
+                _ = NSTimer.scheduledTimerWithTimeInterval(1,
+                    target: self,
+                    selector: ("resetImage:"),
+                    userInfo: img,
+                    repeats: false)
+                
                 break
             }
         }
         super.touchesMoved(touches, withEvent: event)
     }
 
+    //1 second delay then erase image change
+    func resetImage(timer: NSTimer){
+        let tag = timer.userInfo?.tag
+//        print("resenting timer tag: ", tag)
+        for img in imgLeds{
+            if (img.tag == tag){
+                img.image = UIImage(named: "image-led-grid-blue.png")
+                break
+            }
+        }
+        
+
+    }
 
 }
 
