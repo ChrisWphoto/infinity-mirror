@@ -14,7 +14,6 @@
 		837716EE1C3C81DA005AE287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837716EC1C3C81DA005AE287 /* LaunchScreen.storyboard */; };
 		837716F91C3C81DA005AE287 /* Led_GridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837716F81C3C81DA005AE287 /* Led_GridTests.swift */; };
 		837717041C3C81DA005AE287 /* Led_GridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837717031C3C81DA005AE287 /* Led_GridUITests.swift */; };
-		837717141C3C831E005AE287 /* ledBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837717131C3C831E005AE287 /* ledBtn.swift */; };
 		8377175D1C3DC59F005AE287 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377175B1C3DC59F005AE287 /* BTDiscovery.swift */; };
 		8377175E1C3DC59F005AE287 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377175C1C3DC59F005AE287 /* BTService.swift */; };
 		837717661C3E0E5F005AE287 /* btn-circle-led.png in Resources */ = {isa = PBXBuildFile; fileRef = 837717651C3E0E5F005AE287 /* btn-circle-led.png */; };
@@ -55,7 +54,6 @@
 		837716FF1C3C81DA005AE287 /* Led-GridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Led-GridUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837717031C3C81DA005AE287 /* Led_GridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Led_GridUITests.swift; sourceTree = "<group>"; };
 		837717051C3C81DA005AE287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		837717131C3C831E005AE287 /* ledBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ledBtn.swift; sourceTree = "<group>"; };
 		8377175B1C3DC59F005AE287 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
 		8377175C1C3DC59F005AE287 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
 		837717651C3E0E5F005AE287 /* btn-circle-led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-circle-led.png"; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		837716D71C3C81DA005AE287 = {
 			isa = PBXGroup;
 			children = (
-				837717131C3C831E005AE287 /* ledBtn.swift */,
 				837716E21C3C81DA005AE287 /* Led-Grid */,
 				837716F71C3C81DA005AE287 /* Led-GridTests */,
 				837717021C3C81DA005AE287 /* Led-GridUITests */,
@@ -296,7 +293,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837717141C3C831E005AE287 /* ledBtn.swift in Sources */,
 				837716E61C3C81DA005AE287 /* ViewController.swift in Sources */,
 				8377175E1C3DC59F005AE287 /* BTService.swift in Sources */,
 				8377175D1C3DC59F005AE287 /* BTDiscovery.swift in Sources */,
