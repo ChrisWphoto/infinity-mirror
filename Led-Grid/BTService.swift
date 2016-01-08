@@ -6,6 +6,13 @@
 //  Copyright (c) 2014 Razeware LLC. All rights reserved.
 //
 
+/*
+This code is part of a tutorial found at:
+http://www.raywenderlich.com/85900/arduino-tutorial-integrating-bluetooth-le-ios-swift
+
+*/
+
+
 import Foundation
 import CoreBluetooth
 
