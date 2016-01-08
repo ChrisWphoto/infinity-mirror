@@ -10,17 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-//    @IBOutlet var buttons: [UIButton]!
-
-    
-//    let image = UIImage(named: "circle.png") as UIImage!
-
     @IBOutlet var imgLeds: [UIImageView]!
     @IBOutlet weak var imgBluetoothStatus: UIImageView!
     
     var lightPanelMode: UInt8 = 100 //default to live User mode
-    
+
+/*****************  Color Change Events  **********************/
     var redSliderVal: UInt8 = 125
     var greenSliderVal: UInt8 = 75
     var blueSliderVal: UInt8 = 25
@@ -45,6 +40,9 @@ class ViewController: UIViewController {
         sendPosition(UInt8(0))
         print("toggle Rainbow: ", sender.on, "lightPanelMode:", lightPanelMode)
     }
+/*****************  Color Change Events  **********************/
+    
+    
     var timerTXDelay: NSTimer?
     var allowTX = true
     var lastPosition: UInt8 = 255
@@ -86,32 +84,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // Valid position range: 0 to 180
+/*****************  Send to Bluetooth_service  **********************/
     func sendPosition(position: UInt8) {
         // 1
         if !allowTX {
             return
         }
-  
-//        var r: UInt32 = 50
-//        var g : UInt32 = 128
-//        var b : UInt32 = 255
-//        
-//        var final : UInt32 = UInt32(position)
-//        final = (final << 24)
-//        r = (r << 16)
-//        g = (g << 8)
-//        
-//        final = final | r | g | b
-//        
-//        var strFinal = "" as String
-//        strFinal += NSString(format: "%8X", final) as String
-//        print(strFinal)
 
-        // 4
         // Send position to BLE Shield (if service exists and is connected)
         if let bleService = btDiscoverySharedInstance.bleService {
-//          bleService.writePosition(final)
+
             bleService.writePosition(blueSliderVal)
             bleService.writePosition(greenSliderVal)
             bleService.writePosition(redSliderVal)
@@ -144,9 +126,6 @@ class ViewController: UIViewController {
             if let isConnected: Bool = userInfo["isConnected"] {
                 if isConnected {
                     self.imgBluetoothStatus.image = UIImage(named: "Bluetooth_Connected")
-                    
-                    // Send current slider position //change TODO!
-//                    self.sendPosition(UInt8(0))
                 } else {
                     self.imgBluetoothStatus.image = UIImage(named: "Bluetooth_Disconnected")
                 }
@@ -157,9 +136,6 @@ class ViewController: UIViewController {
     func timerTXDelayElapsed() {
         self.allowTX = true
         self.stopTimerTXDelay()
-        
-//         Send current slider position  TODO!
-//        self.sendPosition(UInt8(0))
     }
     
     func stopTimerTXDelay() {
@@ -171,7 +147,7 @@ class ViewController: UIViewController {
         self.timerTXDelay = nil
     }
     
-
+/*****************  Capture Touch Events  **********************/
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
@@ -198,8 +174,6 @@ class ViewController: UIViewController {
         }
         super.touchesBegan(touches, withEvent: event)
     }
-    
-    
 
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
@@ -223,18 +197,18 @@ class ViewController: UIViewController {
         }
         super.touchesMoved(touches, withEvent: event)
     }
-
-    //1 second delay then erase image change
+/*****************  Capture Touch Events  **********************/
+     
+    
+    //1 second delay then erase image change after touch
     func resetImage(timer: NSTimer){
         let tag = timer.userInfo?.tag
-//        print("resenting timer tag: ", tag)
         for img in imgLeds{
             if (img.tag == tag){
                 img.image = UIImage(named: "image-led-grid-blue.png")
                 break
             }
         }
-        
 
     }
 
