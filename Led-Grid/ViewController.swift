@@ -14,6 +14,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgBluetoothStatus: UIImageView!
     
     var lightPanelMode: UInt8 = 100 //default to live User mode
+    
+/*****************  Set Dealy in miliseconds **********************/
+    
+    var delaySliderVal: UInt8 = 10
+    
+    @IBAction func delaySlider(sender: UISlider) {
+        let delay = UInt8(sender.value)
+        delaySliderVal = delay
+        print("delay: ", delaySliderVal)
+    }
 
 /*****************  Color Change Events  **********************/
     var redSliderVal: UInt8 = 125
@@ -99,6 +109,7 @@ class ViewController: UIViewController {
             bleService.writePosition(redSliderVal)
             bleService.writePosition(position)
             bleService.writePosition(lightPanelMode)
+            bleService.writePosition(delaySliderVal)
         
             print(sendPosNum)
             sendPosNum++

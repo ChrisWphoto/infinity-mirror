@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bluetooth_Disconnected" translatesAutoresizingMaskIntoConstraints="NO" id="ugf-pE-aD4">
-                                <rect key="frame" x="162" y="20" width="50" height="50"/>
+                                <rect key="frame" x="174" y="20" width="30" height="30"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn-circle-led.png" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-tt-3TN">
                                 <rect key="frame" x="2" y="296" width="53" height="53"/>
@@ -209,11 +209,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How Me Make Things" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dH-n9-AWI">
-                                <rect key="frame" x="20" y="78" width="335" height="63"/>
+                                <rect key="frame" x="20" y="51" width="335" height="63"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.86485602094240832" green="0.86485602094240832" blue="0.86485602094240832" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="255" minimumValueImage="running_rabbit-red" maximumValueImage="turtle-128" translatesAutoresizingMaskIntoConstraints="NO" id="r97-Jo-1vb">
+                                <rect key="frame" x="7" y="116" width="364" height="31"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.023529411764705882" green="0.28627450980392155" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="delaySlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="7SM-uS-JAM"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -281,5 +289,7 @@
     <resources>
         <image name="Bluetooth_Disconnected" width="230" height="230"/>
         <image name="btn-circle-led.png" width="174" height="174"/>
+        <image name="running_rabbit-red" width="30" height="30"/>
+        <image name="turtle-128" width="30" height="30"/>
     </resources>
 </document>
