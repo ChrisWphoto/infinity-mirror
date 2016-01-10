@@ -3,12 +3,13 @@
 // (thirs color set value) Blue = BLUE
 
 #include <Adafruit_NeoPixel.h>
+#include <SimpleTimer.h>
 #ifdef __AVR__
 #include <avr/power.h>
 #endif
 
 #define PIN 6
-#define FADE_FACTOR 1
+#define FADE_FACTOR 2
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
@@ -19,60 +20,61 @@
 //   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(50, PIN, NEO_RGB + NEO_KHZ800);
 
-void setup() {
-   // This is for Trinket 5V 16MHz, you can remove these three lines if you are not using a Trinket
-#if defined (__AVR_ATtiny85__)
-  if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
-#endif
-  // End of trinket special code
-
-  Serial.begin(115200);  //initial the Serial
-  
-  strip.begin();
-  strip.show(); // Initialize all pixels to 'off'
-  
-}
-/*
-void loop() {
-  // put your main code here, to run repeatedly:
-  if (Serial.available())  {
-    uint8_t character = Serial.read();
-   
-    Serial.println(character);
-    if(character < 50){
-      //lightUntil(character);
-      //lightOnlyOne(character);
-      lightUpOneLED(character, 128, 0, 128);
-    }
-  }
-  fadeByFactor();
-  delay(10);
-
-  //rainbowCycle(20);
-}
-*/
+// the timer object
+SimpleTimer timer;
 
 //Globals
 boolean liveMode = true; //user can control ligths via bluetooth
-  boolean rainbowMode = false; //rainbow is turned off by default
-  uint8_t turnRainbowOn = 101;
-  uint8_t turnLiveModeOn = 100;
+boolean rainbowMode = false; //rainbow is turned off by default
+uint8_t turnRainbowOn = 101;
+uint8_t turnLiveModeOn = 100;
+uint8_t fadeSpeed = 2;
+int fadeSpeedTimer = 2;
+int timerID = 0;
+
+void setup() {
+   // This is for Trinket 5V 16MHz, you can remove these three lines if you are not using a Trinket
+  #if defined (__AVR_ATtiny85__)
+    if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
+  #endif
+  // End of trinket special code
+
+  Serial.begin(115200);  //initial the Serial
+
+  // Setup Timer for fade
+  timerID = timer.setInterval(fadeSpeedTimer, fadeByFactor);
+  
+  strip.begin();
+  strip.show(); // Initialize all pixels to 'off'
+}
 
 void loop(){
- 
-  
-  uint8_t pixel[5] = {6, 10, 220, 30, 35};
-
-
+  uint8_t pixel[6] = {6, 10, 220, 30, 35, 20};
   
   //wait until 5 bytes in buffer
-  if(Serial.available() >= 5) {
+  if(Serial.available() >= 6) {
     
-    pixel[0] = Serial.read(); 
-    pixel[1] = Serial.read();
-    pixel[2] = Serial.read();
-    pixel[3] = Serial.read();
-    pixel[4] = Serial.read(); //if last byte == 101 turn on Rainbowmode
+    pixel[0] = Serial.read(); // Blue
+    pixel[1] = Serial.read(); // Green
+    pixel[2] = Serial.read(); // Red
+    pixel[3] = Serial.read(); // Position: LED number 0-48
+    pixel[4] = Serial.read(); // if last byte == 101 turn on Rainbowmode
+    pixel[5] = Serial.read(); // Delay val: 0 - 255
+
+    /*/print out what we got
+    Serial.print("pixel[0]: ");
+    Serial.print(pixel[0]); // blue
+    Serial.print(", pixel[1]: ");
+    Serial.print(pixel[1]); // green
+    Serial.print(", pixel[2]: ");
+    Serial.print(pixel[2]); // red
+    Serial.print(", pixel[3]: ");
+    Serial.print(pixel[3]); // Pixel Number
+    Serial.print(", pixel[4]: ");
+    Serial.print(pixel[4]); // Panel Mode
+    Serial.print(", pixel[5]: ");
+    Serial.print(pixel[5]); // delay
+    Serial.println("");*/
 
     if (pixel[4] == turnRainbowOn){ 
       rainbowMode = true; 
@@ -82,28 +84,34 @@ void loop(){
       rainbowMode = false; 
       liveMode = true;
       } //RainbowMode off
-    
-    //print out what we got
-    Serial.print(pixel[4]);
-    Serial.print(" ");
-    Serial.print(pixel[3]);
-    Serial.print(" ");
-    Serial.print(pixel[2]);
-    Serial.print(" ");
-    Serial.print(pixel[1]);
-    Serial.print(" ");
-    Serial.print(pixel[0]);
-    Serial.println("");
-    
+
+    // Set FadeSpeed 
+    if(pixel[5] != fadeSpeed){ // got a new speed
+      if(pixel[5] == 255){
+        // Delete the timer and dont fade
+        if(timer.isEnabled(timerID)){
+          timer.deleteTimer(timerID);
+        }
+      } else {
+        fadeSpeed = pixel[5];
+        fadeSpeedTimer = pixel[5]/5;
+
+        if(timer.isEnabled(timerID)){
+          timer.deleteTimer(timerID);
+        }
+        timerID = timer.setInterval(fadeSpeedTimer, fadeByFactor);
+        Serial.print("Starting a new timer with: ");
+        Serial.println(fadeSpeedTimer);
+      }
+    }
+    Serial.println(fadeSpeedTimer);
     if (liveMode){ //user is in active control
       lightUpOneLED(pixel[3], pixel[2], pixel[1], pixel[0]);  
     }
   }
-
-  if(rainbowMode) { rainbowCycle(10); }
-  if(liveMode) { fadeByFactor(); }
   
-  delay(10);
+  if(rainbowMode) { rainbowCycle(10); }
+  if(liveMode) { timer.run(); }
 }
 
 void lightUpOneLED(uint8_t pixel, uint8_t r, uint8_t g, uint8_t b){
@@ -253,6 +261,7 @@ void rainbowCycle(uint8_t wait) {
         pixel[2] = Serial.read();
         pixel[3] = Serial.read();
         pixel[4] = Serial.read(); //if last byte == 101 turn on Rainbowmode
+        pixel[5] = Serial.read();
     
         if (pixel[4] == turnLiveModeOn){
           rainbowMode = false; 
