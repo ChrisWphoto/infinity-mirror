@@ -9,7 +9,7 @@ and control each LED individually by either dragging across or tapping the blue 
 ### Version
 0.0.1
 This is the very first version of this app and it's only been optimized for the Iphone 6
-but if you feel comfortable laoding the project into Xcode it shouldn't be too hard to
+but if you feel comfortable loading the project into Xcode it shouldn't be too hard to
 change things.
 
 ### Arduino
