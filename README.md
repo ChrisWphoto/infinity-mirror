@@ -1,19 +1,22 @@
 # Infinity Mirror Bluetooth Controller
 
 ### IOS
-This is a single view app allows you to connect to a Bluno Arduino board via bluetooth
+This is a single view app that allows you to connect to an Arduino Bluno board via bluetooth
 and control each LED individually by either dragging across or tapping the blue dots.
 
-![Image of Infinity Matrix and App](http://i.imgur.com/IyAhgGF.png)
+![Image of Infinity Matrix and App](http://i.imgur.com/XWPCvLD.png)
+
+Build and demo video on [youtube](https://youtu.be/_84PBKHZnmY)
+Complete build instructions posted on [Instructables.com](http://www.instructables.com/id/LED-Infinity-Matrix-Bluetooth-Controlled/)
 
 ### Version
 0.0.1
 This is the very first version of this app and it's only been optimized for the Iphone 6
 but if you feel comfortable loading the project into Xcode it shouldn't be too hard to
-change things.
+modify it in any way you like.
 
 ### Arduino
-Check out the arduino folder to find the code you'll to push to your board via Arduino
+Check out the Arduino folder to find the code you'll to push to your board via Arduino
 Sketch
 
 Also included is the Adafruit library that has all sorts of cool effects like the rainbow
@@ -21,7 +24,7 @@ Also included is the Adafruit library that has all sorts of cool effects like th
 
 
 ### Attributions
-This app is base on the Arduino Tutorial posted by Owen L Brown here.
-http://www.raywenderlich.com/85900/arduino-tutorial-integrating-bluetooth-le-ios-swift
+This app is based on the Arduino Tutorial posted by Owen L Brown [here](http://www.raywenderlich.com/85900/arduino-tutorial-integrating-bluetooth-le-ios-swift).
 
-If you want to start diving into the code I would suggest starting there.
+
+If you want to start making your own bluetooth app for IOS I would suggest reading Owens tutorial. 
